@@ -9,35 +9,58 @@ string murcielago(){// esta es la funcion encarga de codificar las letras que se
     int longt = strlen(palabra);// aqui estoy delimitando el arreglo
     for(int i = 0;i<longt;i++)
     {
-        if(palabra[i]=='m')
-        palabra[i]='0';
+      switch(palabra[i]){
+          {  case 'm':
+              palabra[i]='0';
+              break;}
 
-        else if (palabra[i]=='u')
-        palabra[i]='1';
-
-        else if(palabra[i]=='r')
-        palabra[i]='2';
-
-        else if(palabra[i]=='c')
-        palabra[i]='3';
-
-        else if(palabra[i]=='i')
-        palabra[i]='4';
-
-        else if(palabra[i] =='e')
-        palabra[i]='5';
-
-        else if(palabra[i]=='l')
-        palabra[i]='6';
-
-        else if(palabra[i]=='a')
-        palabra[i]='7';
-
-        else if(palabra[i]=='g')
-        palabra[i]='8';
-
-        else if(palabra[i]=='0')
-        palabra[i]='9';
+             { case 'u':
+              palabra[i]='1';
+              break;
+          }
+          {
+              case 'r':
+              palabra[i]='2';
+              break;
+          }
+          {
+              case 'c':
+              palabra[i]='3';
+              break;
+          }
+          {
+              case 'i':
+              palabra[i]='4';
+              break;
+          }
+          {
+              case 'e':
+              palabra[i]='5';
+              break;
+          }
+          {
+              case 'l':
+              palabra[i]='6';
+              break;
+          }
+          {
+              case 'a':
+              palabra[i]='7';
+              break;
+          }
+          {
+              case 'g':
+              palabra[i]='8';
+              break;
+          }
+          {
+              case 'o':
+              palabra[i]='9';
+              break;
+          }
+          default:
+          palabra[i]=palabra[i];
+      }
     }
     cout<<"La codificacion de la frase incresada es:"<<endl;
     cout<<palabra;
